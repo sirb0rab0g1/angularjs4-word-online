@@ -1,0 +1,19 @@
+<div class="ui-g">
+  <div class="ui-g-12 ui-md-6 ui-lg-5">
+    <span style="font-size:40px;">Contact</span>
+    <div *ngFor="let info of contactObject">
+      <div class="ui-g-12 ui-md-12 ui-lg-12">
+        <div class="ui-g-12 ui-md-4 ui-lg-2 contact-image-container">
+          <a href="https://www.facebook.com/zxcasdqwe123qweasdzxc">
+            <img class="img-style" src="{{info.img}}"/>
+          </a>
+        </div>
+        <div class="ui-g-12 ui-md-8 ui-lg-7 contact-info" style="margin-top:10px;">
+          <div><b>{{info.title}}</b></div>
+          <div style="margin-top:8px;">{{info.desc}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui-g-12 ui-md-6 ui-lg-2"></div>
+</div>

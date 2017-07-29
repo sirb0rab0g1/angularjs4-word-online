@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 
 //template components
 import { EditorComponent } from './editor/editor.component';
+import { ContactComponent } from './contact/contact.component';
 
 //angular material components
 import { MdSidenavModule } from '@angular/material';
 import { MdButtonModule } from '@angular/material';
 import { MdProgressBarModule } from '@angular/material';
+
 //prime components
-import { EditorModule } from 'primeng/primeng';
+// import { EditorModule } from 'primeng/primeng';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditorComponent
+    EditorComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,11 @@ import { EditorModule } from 'primeng/primeng';
     MdProgressBarModule,
 
     //prime-faces
-    EditorModule
+    // EditorModule
+
+    //wysiwyg
+    FroalaEditorModule.forRoot(), 
+    FroalaViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

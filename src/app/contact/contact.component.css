@@ -1,0 +1,23 @@
+.img-style {
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+  /* FF 35+ */
+}
+
+.img-style:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+  cursor: pointer;
+}
+
+.contact-image-container {
+  margin-top: 10px;
+  text-align: center;
+}
