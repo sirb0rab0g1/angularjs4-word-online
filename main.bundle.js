@@ -376,7 +376,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/editor/editor.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [froalaEditor]>\n  <small>\n        Hello<br>\n    Welcome to my own version of <b>Microsoft Word Online</b> enjoy!\n    </small>\n</div>\n"
+module.exports = "<div [froalaEditor]>\n  <div style=\"min-height:320px;max-height:auto;\">\n    <small>\n        Hello<br>\n    Welcome to my own version of <b>Microsoft Word Online</b> enjoy!\n    </small>\n  </div>\n</div>\n"
 
 /***/ }),
 
